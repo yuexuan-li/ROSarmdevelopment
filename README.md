@@ -1,5 +1,5 @@
 # ROSarmdevelopment
-创建并初始化工作目录
+Create and initialize a working directory
 ```
 mkdir -p ~/duco_ws/src
 cd ~/duco_ws/src
@@ -7,10 +7,9 @@ catkin_init_workspace
 cd ~/duco_ws/
 catkin_make
 ```
-下载安装包并解压
-解压后将所得的源码复制到指定的/duco_ws/src下
-
-具体代码目录结构：
+Download the installation package and unzip it
+After decompression, copy the obtained source code to the specified /duco_ws/src
+Specific code directory structure:
 
 duco_ws
       --src
@@ -21,18 +20,18 @@ duco_ws
              --duco_gcr5_moveit_config
              --duco_msgs
              --duco_support
-   编译源代码
+Compile source code
    ```
-   cd ~/duco_ws
+cd ~/duco_ws
 source ./devel/setup.bash
 catkin_make
    ```
-              启动脚本
-启动机器人控制器程序
-打开终端1
-   ```
-   cd ~/duco_ws
+
+Startup script
+Start the robot controller program
+Open terminal 1
+```
+cd ~/duco_ws
 source ./devel/setup.bash
-roslaunch duco_gcr5_moveit_config moveit_planning_execution.launch robot_ip:=192.168.*.*
-   
-      ```
+roslaunch duco_gcr5_moveit_config moveit_planning_execution.launch robot_ip:=192.168.*.* 
+```
